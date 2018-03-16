@@ -1,0 +1,9 @@
+---
+applications:
+- name: jenkins-pipeline-example
+  memory: 1024M
+  buildpack: java_buildpack
+  health-check-type: port
+  stack: cflinuxfs2
+  routes:
+  - route: jenkins-pipeline-example.cfapps.io
